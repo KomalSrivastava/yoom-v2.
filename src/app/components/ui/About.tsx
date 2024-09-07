@@ -9,53 +9,56 @@ import finance from '../../assets/finance.png';
 const About = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-blue-500 via-white to-purple-500 flex flex-col items-center px-4" id="about">
-      <div className="p-8 bg-white shadow-lg rounded-lg border border-gray-300 w-full max-w-screen-xl mt-10">
-        <h1 className="text-purple-600 text-6xl w-full mx-auto font-semibold p-4 mb-8 text-center border-b-4 border-blue-500">
-          About <span className="text-blue-500">Yoom</span>
+      <div className="p-8 bg-white shadow-lg rounded-lg border border-gray-300 w-full max-w-screen-xl mt-10 mb-12">
+        <h1 className="text-purple-600 text-6xl font-semibold p-4 mb-8 text-center border-b-4 border-blue-500">
+          <span className="text-gray-700">About</span>
+          <span className="text-blue-500 ml-2">Yoom</span>
         </h1>
         
-        <div className="grid grid-cols-8 bg-gradient-to-r from-blue-200 via-white to-purple-200 gap-8 p-6 rounded-lg shadow-lg place-items-center w-full">
-
-          <div className="w-full col-span-5 relative bg-white backdrop-blur-md border border-blue-200 rounded-xl overflow-hidden animate-background">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-200 via-white to-purple-200">
+          
+          {/* Top row */}
+          <div className="col-span-2 md:col-span-1 relative bg-white backdrop-blur-md border border-blue-200 rounded-xl overflow-hidden p-6 pb-8 flex flex-col animate-background">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-blue-800 opacity-80"></div>
-            <div className="flex flex-row p-6 relative z-10">
+            <div className="relative z-10 flex flex-row">
               <Image src={book} alt="book" className="w-auto h-[138px]" />
-              <div className="flex flex-col mt-4 ml-4">
-                <h2 className="text-2xl font-bold text-white">Learning Resources</h2>
-                <p className="text-lg text-white/80">Explore various learning materials to enhance your knowledge.</p>
+              <div className="flex flex-col ml-4">
+                <h2 className="text-2xl font-bold text-white">Real-Time Processing and Querying</h2>
+                <p className="text-lg text-white/80">The app uses advanced deep learning to capture and analyze entire conversations during video calls. Users can later query specific aspects of the discussion to retrieve precise responses.</p>
               </div>
             </div> 
           </div>
 
-          <div className="w-full col-span-3 relative bg-white backdrop-blur-md border border-purple-200 rounded-xl overflow-hidden animate-background">
+          <div className="relative bg-white backdrop-blur-md border border-purple-200 rounded-xl overflow-hidden p-6 pb-8 flex flex-col animate-background">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-blue-800 opacity-80"></div>
-            <div className="flex flex-row p-6 relative z-10">
+            <div className="relative z-10 flex flex-row">
               <Image src={pc} alt="pc" className="w-auto h-[138px]" />
-              <div className="flex flex-col mt-4 ml-4">
-                <h2 className="text-2xl font-bold text-white">Tech Solutions</h2>
-                <p className="text-lg text-white/80">Innovative solutions to tech challenges.</p>
+              <div className="flex flex-col ml-4">
+                <h2 className="text-2xl font-bold text-white">Quick Info Retrieval</h2>
+                <p className="text-lg text-white/80">Easily access key points, insights, or specific topics without having to review the entire call, saving time and improving efficiency.</p>
               </div>
             </div> 
           </div>
 
-          <div className="w-full col-span-3 relative bg-white backdrop-blur-md border border-blue-200 rounded-xl overflow-hidden animate-background">
+          {/* Bottom row */}
+          <div className="relative bg-white backdrop-blur-md border border-blue-200 rounded-xl overflow-hidden p-6 pb-8 flex flex-col animate-background">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-blue-800 opacity-80"></div>
-            <div className="flex flex-row p-6 relative z-10">
+            <div className="relative z-10 flex flex-row">
               <Image src={card} alt="card" className="w-auto h-[138px]" />
-              <div className="flex flex-col mt-4 ml-4">
-                <h2 className="text-2xl font-bold text-white">Financial Tools</h2>
-                <p className="text-lg text-white/80">Manage your finances with our state-of-the-art tools.</p>
+              <div className="flex flex-col ml-4">
+                <h2 className="text-2xl font-bold text-white">Versatile Use Cases</h2>
+                <p className="text-lg text-white/80">Adapts to various settings, from business meetings to casual chats, helping users focus on the most relevant information.</p>
               </div>
             </div> 
           </div>
 
-          <div className="w-full col-span-5 relative bg-white backdrop-blur-md border border-purple-200 rounded-xl overflow-hidden animate-background">
+          <div className="col-span-2 md:col-span-1 relative bg-white backdrop-blur-md border border-purple-200 rounded-xl overflow-hidden p-6 pb-8 flex flex-col animate-background">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-blue-800 opacity-80"></div>
-            <div className="flex flex-row p-6 relative z-10">
+            <div className="relative z-10 flex flex-row">
               <Image src={finance} alt="finance" className="w-auto h-[138px]" />
-              <div className="flex flex-col mt-4 ml-4">
-                <h2 className="text-2xl font-bold text-white">Investment Plans</h2>
-                <p className="text-lg text-white/80">Choose the right investment plan for your future.</p>
+              <div className="flex flex-col ml-4">
+                <h2 className="text-2xl font-bold text-white">Enhanced Productivity</h2>
+                <p className="text-lg text-white/80">Streamlines information retrieval, boosting productivity and ensuring a more organized communication experience.</p>
               </div>
             </div> 
           </div>
