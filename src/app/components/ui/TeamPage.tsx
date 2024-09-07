@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Link from 'next/link'; // Import Link component
 
 const teamMembers = [
   {
@@ -53,60 +54,58 @@ const TeamPage = () => {
       {/* Team Members Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
         {teamMembers.map((member) => (
-          <a
-            href={member.profile}
-            key={member.name}
-            className="w-full max-w-xs mx-auto group"
-          >
-            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105 h-96"> {/* Increased height */}
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={400}  // Adjusted width
-                height={400} // Increased height
-                layout="responsive"
-                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
-              />
-              <div className="absolute inset-0 bg-gray-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
-                <h2 className="text-white text-lg font-semibold mb-1 transition-transform transform group-hover:translate-y-[-5px]">
-                  {member.name}
-                </h2>
-                <p className="text-white text-sm mb-2">{member.role}</p>
-                <div className="flex space-x-3">
-                  {member.linkedin && (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-blue-300"
-                    >
-                      <FaLinkedin className="text-lg" />
-                    </a>
-                  )}
-                  {member.github && (
-                    <a
-                      href={member.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-gray-300"
-                    >
-                      <FaGithub className="text-lg" />
-                    </a>
-                  )}
-                  {member.twitter && (
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-blue-300"
-                    >
-                      <FaTwitter className="text-lg" />
-                    </a>
-                  )}
+          <Link href={member.profile} key={member.name} legacyBehavior>
+            <a className="w-full max-w-xs mx-auto group">
+              <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105 h-96"> {/* Increased height */}
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={400}  // Adjusted width
+                  height={400} // Adjusted height
+                  layout="responsive"
+                  className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
+                />
+                <div className="absolute inset-0 bg-gray-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
+                  <h2 className="text-white text-lg font-semibold mb-1 transition-transform transform group-hover:translate-y-[-5px]">
+                    {member.name}
+                  </h2>
+                  <p className="text-white text-sm mb-2">{member.role}</p>
+                  <div className="flex space-x-3">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-blue-300"
+                      >
+                        <FaLinkedin className="text-lg" />
+                      </a>
+                    )}
+                    {member.github && (
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-gray-300"
+                      >
+                        <FaGithub className="text-lg" />
+                      </a>
+                    )}
+                    {member.twitter && (
+                      <a
+                        href={member.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-blue-300"
+                      >
+                        <FaTwitter className="text-lg" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </Link>
         ))}
       </div>
     </div>
