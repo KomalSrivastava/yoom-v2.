@@ -1,25 +1,18 @@
-import dynamic from 'next/dynamic';
 import React from 'react';
-
-// Dynamically import icons to be used only on the client side
-const FaVideo = dynamic(() => import('react-icons/fa').then(mod => mod.FaVideo), { ssr: false });
-const FaRegCalendarAlt = dynamic(() => import('react-icons/fa').then(mod => mod.FaRegCalendarAlt), { ssr: false });
-const FaFilePdf = dynamic(() => import('react-icons/fa').then(mod => mod.FaFilePdf), { ssr: false });
-const FaCheckCircle = dynamic(() => import('react-icons/fa').then(mod => mod.FaCheckCircle), { ssr: false });
-const MdSchedule = dynamic(() => import('react-icons/md').then(mod => mod.MdSchedule), { ssr: false });
-const MdSettings = dynamic(() => import('react-icons/md').then(mod => mod.MdSettings), { ssr: false });
+import { FaVideo, FaRegCalendarAlt, FaFilePdf, FaCheckCircle } from "react-icons/fa";
+import { MdSchedule, MdSettings } from "react-icons/md";
 
 const InstructionPage = () => {
   return (
-    <div className="relative w-full p-5 min-h-screen bg-gray-100">
+    <div className="relative w-full min-h-screen bg-gray-100">
       {/* Background Section */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-white to-purple-500 z-0"></div>
 
-      <div className="relative w-full min-h-screen z-10">
+      <div className="relative w-full min-h-screen p-6 z-10">
         {/* Header Section */}
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-600 mb-4">Zoom Meeting Roadmap</h1>
-          <p className="text-lg text-gray-700">Follow these steps to set up and join your Zoom meeting smoothly.</p>
+          <h1 className="text-4xl font-bold text-blue-600 mb-4">Yoom Meeting Roadmap</h1>
+          <p className="text-lg text-gray-700">Follow these steps to set up and join your Yoom meeting smoothly.</p>
         </header>
 
         {/* Roadmap Steps */}
@@ -34,7 +27,7 @@ const InstructionPage = () => {
             </div>
             <div className="ml-6 w-full relative z-10 bg-white shadow-lg rounded-lg p-6 border border-gray-300 transition-transform transform hover:scale-105">
               <h2 className="text-xl font-semibold text-blue-600">1. Schedule Your Meeting</h2>
-              <p className="text-gray-600 mt-2">Create a Zoom meeting by scheduling it through the Zoom app or website.</p>
+              <p className="text-gray-600 mt-2">Create a Yoom meeting by scheduling it through the Yoom app or website.</p>
               <p className="text-gray-500 mt-2 flex items-center"><FaRegCalendarAlt className="mr-1" /> Add meeting details and invite participants.</p>
             </div>
           </div>
@@ -47,7 +40,7 @@ const InstructionPage = () => {
             <div className="ml-6 w-full relative z-10 bg-white shadow-lg rounded-lg p-6 border border-gray-300 transition-transform transform hover:scale-105">
               <h2 className="text-xl font-semibold text-green-600">2. Set Up Your Equipment</h2>
               <p className="text-gray-600 mt-2">Ensure your camera, microphone, and speakers are working properly.</p>
-              <p className="text-gray-500 mt-2 flex items-center"><MdSettings className="mr-1" /> Check your settings in the Zoom app.</p>
+              <p className="text-gray-500 mt-2 flex items-center"><MdSettings className="mr-1" /> Check your settings in the Yoom app.</p>
             </div>
           </div>
 

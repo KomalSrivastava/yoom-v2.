@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:space-x-12">
         {/* Logo & Description */}
         <div className="flex-1 mb-8 lg:mb-0">
-          <h2 className="text-3xl font-bold mb-2">ZoomMeet</h2>
+          <h2 className="text-3xl font-bold mb-2">YoomMeet</h2>
           <p className="text-gray-400">Connecting people effortlessly through video conferencing.</p>
         </div>
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="mb-4 lg:mb-0">
             <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
             <p className="flex items-center mb-2">
-              <FaEnvelope className="mr-2" /> support@zoommeet.com
+              <FaEnvelope className="mr-2" /> support@yoommeet.com
             </p>
             <p className="flex items-center mb-2">
               <FaPhone className="mr-2" /> +1 (800) 123-4567
@@ -91,7 +91,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="mt-6 border-t border-gray-700 pt-2 text-center">
-        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} ZoomMeet. All rights reserved.</p>
+        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} YoomMeet. All rights reserved.</p>
       </div>
     </footer>
   );
