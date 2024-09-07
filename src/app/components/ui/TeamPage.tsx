@@ -14,7 +14,7 @@ const teamMembers = [
   },
   {
     name: 'Shivansh',
-    role: 'Frontend Developer',
+    role: 'Ai/Ml',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/bobsmith',
     github: 'https://github.com/bobsmith',
@@ -32,7 +32,7 @@ const teamMembers = [
   },
   {
     name: 'Komal',
-    role: 'UI/UX Designer',
+    role: 'Frontend Developer',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/danawhite',
     github: 'https://github.com/danawhite',
@@ -58,14 +58,14 @@ const TeamPage = () => {
             key={member.name}
             className="w-full max-w-sm mx-auto group"
           >
-            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105">
+            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105 h-80"> {/* Increased height */}
               <Image
                 src={member.image}
                 alt={member.name}
                 width={400}  // Adjusted width
-                height={350} // Increased height
+                height={300} // Adjusted height
                 layout="responsive"
-                className="w-full h-52 object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
               />
               <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
                 <h2 className="text-white text-lg font-semibold mb-1 transition-transform transform group-hover:translate-y-[-5px]">
