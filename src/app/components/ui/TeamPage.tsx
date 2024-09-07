@@ -33,7 +33,7 @@ const teamMembers = [
   {
     name: 'Komal',
     role: 'Frontend Developer',
-    image: '/images/fruits.jpg',
+    image: '/images/Komal.jpg',
     linkedin: 'https://www.linkedin.com/in/danawhite',
     github: 'https://github.com/danawhite',
     twitter: 'https://twitter.com/danawhite',
@@ -67,7 +67,7 @@ const TeamPage = () => {
                 layout="responsive"
                 className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
               />
-              <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
+              <div className="absolute inset-0 bg-gray-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
                 <h2 className="text-white text-lg font-semibold mb-1 transition-transform transform group-hover:translate-y-[-5px]">
                   {member.name}
                 </h2>
