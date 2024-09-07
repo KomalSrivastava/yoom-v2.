@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const teamMembers = [
   {
-    name: 'Alice Johnson',
+    name: 'Shivam',
     role: 'Lead Developer',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/alicejohnson',
@@ -13,7 +13,7 @@ const teamMembers = [
     profile: '#alice-johnson-profile',
   },
   {
-    name: 'Bob Smith',
+    name: 'Shivansh',
     role: 'Frontend Developer',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/bobsmith',
@@ -22,7 +22,7 @@ const teamMembers = [
     profile: '#bob-smith-profile',
   },
   {
-    name: 'Charlie Brown',
+    name: 'Vansh',
     role: 'Backend Developer',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/charliebrown',
@@ -31,7 +31,7 @@ const teamMembers = [
     profile: '#charlie-brown-profile',
   },
   {
-    name: 'Dana White',
+    name: 'Komal',
     role: 'UI/UX Designer',
     image: '/images/fruits.jpg',
     linkedin: 'https://www.linkedin.com/in/danawhite',
@@ -51,28 +51,28 @@ const TeamPage = () => {
       </header>
 
       {/* Team Members Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {teamMembers.map((member, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {teamMembers.map((member) => (
           <a
             href={member.profile}
             key={member.name}
-            className="w-full group"
+            className="w-full max-w-sm mx-auto group"
           >
             <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105">
               <Image
                 src={member.image}
                 alt={member.name}
-                width={500}  // Ensure the width and height are consistent
-                height={400}
-                layout="responsive" // Use responsive layout
-                className="w-full h-64 object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
+                width={400}  // Adjusted width
+                height={350} // Increased height
+                layout="responsive"
+                className="w-full h-52 object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
               />
-              <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-6">
-                <h2 className="text-white text-xl font-semibold mb-2 transition-transform transform group-hover:translate-y-[-5px]">
+              <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-90 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out p-4">
+                <h2 className="text-white text-lg font-semibold mb-1 transition-transform transform group-hover:translate-y-[-5px]">
                   {member.name}
                 </h2>
-                <p className="text-white text-lg mb-4">{member.role}</p>
-                <div className="flex space-x-4">
+                <p className="text-white text-sm mb-2">{member.role}</p>
+                <div className="flex space-x-3">
                   {member.linkedin && (
                     <a
                       href={member.linkedin}
@@ -80,7 +80,7 @@ const TeamPage = () => {
                       rel="noopener noreferrer"
                       className="text-white hover:text-blue-300"
                     >
-                      <FaLinkedin className="text-xl" />
+                      <FaLinkedin className="text-lg" />
                     </a>
                   )}
                   {member.github && (
@@ -90,7 +90,7 @@ const TeamPage = () => {
                       rel="noopener noreferrer"
                       className="text-white hover:text-gray-300"
                     >
-                      <FaGithub className="text-xl" />
+                      <FaGithub className="text-lg" />
                     </a>
                   )}
                   {member.twitter && (
@@ -100,7 +100,7 @@ const TeamPage = () => {
                       rel="noopener noreferrer"
                       className="text-white hover:text-blue-300"
                     >
-                      <FaTwitter className="text-xl" />
+                      <FaTwitter className="text-lg" />
                     </a>
                   )}
                 </div>
