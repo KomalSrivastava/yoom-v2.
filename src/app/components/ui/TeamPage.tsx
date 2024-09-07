@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: 'Shivam',
     role: 'Lead Developer',
-    image: '/images/fruits.jpg',
+    image: '/images/Shivam.jpg',
     linkedin: 'https://www.linkedin.com/in/alicejohnson',
     github: 'https://github.com/alicejohnson',
     twitter: 'https://twitter.com/alicejohnson',
@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Shivansh',
     role: 'Ai/Ml',
-    image: '/images/fruits.jpg',
+    image: '/images/shivansh.jpg',
     linkedin: 'https://www.linkedin.com/in/bobsmith',
     github: 'https://github.com/bobsmith',
     twitter: 'https://twitter.com/bobsmith',
@@ -24,7 +24,7 @@ const teamMembers = [
   {
     name: 'Vansh',
     role: 'Backend Developer',
-    image: '/images/fruits.jpg',
+    image: '/images/vansh.jpg',
     linkedin: 'https://www.linkedin.com/in/charliebrown',
     github: 'https://github.com/charliebrown',
     twitter: 'https://twitter.com/charliebrown',
@@ -43,7 +43,7 @@ const teamMembers = [
 
 const TeamPage = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-6">
+    <div className="bg-gray-100 min-h-screen py-12 px-6 flex flex-col items-center">
       {/* Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-blue-600 mb-4">Meet Our Team</h1>
@@ -51,19 +51,19 @@ const TeamPage = () => {
       </header>
 
       {/* Team Members Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
         {teamMembers.map((member) => (
           <a
             href={member.profile}
             key={member.name}
-            className="w-full max-w-sm mx-auto group"
+            className="w-full max-w-xs mx-auto group"
           >
-            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105 h-80"> {/* Increased height */}
+            <div className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform group-hover:scale-105 h-96"> {/* Increased height */}
               <Image
                 src={member.image}
                 alt={member.name}
                 width={400}  // Adjusted width
-                height={300} // Adjusted height
+                height={400} // Increased height
                 layout="responsive"
                 className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:opacity-70"
               />
