@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../utils/cn";
 import Link from "next/link";
+import { FaUser, FaUsers } from "react-icons/fa";
+import { FaHome,  FaRegListAlt, FaCalendarAlt, FaTasks, FaEnvelope, FaBook } from 'react-icons/fa';
+
 
 
 export const FloatingNav = ({

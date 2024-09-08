@@ -41,6 +41,7 @@ const features = [
 const FeatureSection: React.FC = () => {
   return (
     <section
+      id="features" // Added ID to the section
       style={{
         padding: '4rem 0',
         backgroundColor: '#f5f5f5',

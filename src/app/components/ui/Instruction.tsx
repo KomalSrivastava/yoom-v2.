@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaVideo, FaRegCalendarAlt, FaFilePdf, FaCheckCircle } from "react-icons/fa";
-import { MdSchedule, MdSettings } from "react-icons/md";
+import { FaVideo, FaRegCalendarAlt, FaFilePdf, FaCheckCircle } from 'react-icons/fa';
+import { MdSchedule, MdSettings } from 'react-icons/md';
 
 const InstructionPage = () => {
   return (
