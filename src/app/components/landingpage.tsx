@@ -15,19 +15,19 @@ const LandingPage: React.FC = () => {
       </div>
 
       <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-        {/* Radial gradient for the container to give a faded look */}
+        
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
       </div>
 
       <div className="flex justify-center items-center relative h-full z-10">
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-row items-center justify-between w-full'>
           
-          {/* Centered Lottie animation on the left with slight shift */}
+     
           <div className="flex-shrink-0 flex items-center justify-center h-full" style={{ marginLeft: '-50px' }}>
             <DotLottiePlayer src="https://lottie.host/359b4814-1e81-46b8-9fbc-4a3131cc5417/hX0smCX1Ug.json" />
           </div>
 
-          {/* Centered text content on the right */}
+          
           <div className='ml-8 max-w-[60vw] flex flex-col items-center justify-center h-full'>
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
               YOOM ChatBot...
