@@ -41,7 +41,7 @@ const features = [
 const FeatureSection: React.FC = () => {
   return (
     <section
-      id="features" // Added ID to the section
+      id="features" 
       style={{
         padding: '4rem 0',
         backgroundColor: '#f5f5f5',
@@ -50,12 +50,12 @@ const FeatureSection: React.FC = () => {
         textAlign: 'center',
       }}
     >
-      {/* Title Section */}
+     
       <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#333' }}>
         Features
       </h2>
 
-      {/* Features List */}
+     
       <div
         style={{
           maxWidth: '1200px',
@@ -83,10 +83,10 @@ const FeatureSection: React.FC = () => {
                 style={{
                   width: '100%',
                   borderRadius: '10px',
-                  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.5)', // Darker shadow
+                  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.5)', 
                   transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                 }}
-                whileHover={{ scale: 1.05, boxShadow: '0 12px 24px rgba(0, 0, 0, 0.7)' }} // Darker shadow on hover
+                whileHover={{ scale: 1.05, boxShadow: '0 12px 24px rgba(0, 0, 0, 0.7)' }} 
                 whileTap={{ scale: 0.95 }}
               />
             </a>

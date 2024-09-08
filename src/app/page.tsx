@@ -26,14 +26,14 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav
          navItems={[
-          { name: 'Home', link: '/', icon: <FaHome /> },
-          { name: 'About Yoom', link: '#about', icon: <FaUserAlt /> },
-          { name: 'Dashboard', link: '/dashboard', icon: <FaHome /> },
-          { name: 'Features', link: '#features', icon: <FaRegListAlt /> },
-          { name: 'Upcoming Meetings', link: '#meetings', icon: <FaCalendarAlt /> },
-           { name: 'Instructions', link: '/instructions', icon: <FaVideo /> },
-         { name: 'Our Team', link: '/team', icon: <FaUser /> },
-          { name: 'Contact', link: '#contact', icon: <FaEnvelope /> }, 
+           { name: 'Home', link: '/', icon: <FaHome /> },
+  { name: 'About Yoom', link: '#about', icon: <FaUserAlt /> },
+  { name: 'Dashboard', link: '/dashboard', icon: <FaHome /> },
+  { name: 'Features', link: '#features', icon: <FaRegListAlt /> },
+  { name: 'Upcoming Meetings', link: '#meetings', icon: <FaCalendarAlt /> },
+  { name: 'Instruction', link: '/instruction', icon: <FaHome /> },
+  { name: 'Our Team', link: '/team', icon: <FaUserAlt /> },
+  { name: 'Contact', link: '#contact', icon: <FaEnvelope /> },
         ]} />
           
           

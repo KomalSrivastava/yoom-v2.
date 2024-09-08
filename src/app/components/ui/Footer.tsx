@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:space-x-12">
-        {/* Logo & Description */}
+        
         <div className="flex-1 mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold mb-2">YoomMeet</h2>
           <p className="text-gray-400">Connecting people effortlessly through video conferencing.</p>
         </div>
 
-        {/* Contact Information */}
+        
         <div className="flex flex-col lg:flex-row lg:space-x-12 mb-8 lg:mb-0 flex-1">
           <div className="mb-4 lg:mb-0">
             <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          
           <div className="mb-4 lg:mb-0">
             <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
             <ul className="space-y-2">
@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media Links */}
+         
           <div>
             <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
+        
         <div className="text-center lg:text-right flex-1">
           <h3 className="text-xl font-semibold mb-2">Stay Updated</h3>
           <p className="text-gray-400 mb-4">Subscribe to receive the latest updates and news.</p>
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section */}
+      
       <div className="mt-6 border-t border-gray-700 pt-2 text-center">
         <p className="text-gray-500 text-sm">© {new Date().getFullYear()} YoomMeet. All rights reserved.</p>
       </div>

@@ -1,4 +1,4 @@
-// src/app/components/ui/DotLottiePlayer.tsx
+
 
 "use client";
 
@@ -9,7 +9,7 @@ const DotLottiePlayer: React.FC<{ src: string }> = ({ src }) => {
 
   useEffect(() => {
     if (playerRef.current) {
-      // Add any additional logic for the player initialization here
+      
     }
   }, []);
 

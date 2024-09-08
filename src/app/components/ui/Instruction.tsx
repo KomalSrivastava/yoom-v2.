@@ -3,24 +3,27 @@ import { FaVideo, FaRegCalendarAlt, FaFilePdf, FaCheckCircle } from 'react-icons
 import { MdSchedule, MdSettings } from 'react-icons/md';
 
 const InstructionPage = () => {
-  return (
+    return (
+      <main>
+            <link href='/FaVideo'></link>
+
     <div className="relative w-full min-h-screen bg-gray-100">
-      {/* Background Section */}
+      
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-white to-purple-500 z-0"></div>
 
       <div className="relative w-full min-h-screen p-6 z-10">
-        {/* Header Section */}
+        
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-600 mb-4">Yoom Meeting Roadmap</h1>
           <p className="text-lg text-gray-700">Follow these steps to set up and join your Yoom meeting smoothly.</p>
         </header>
 
-        {/* Roadmap Steps */}
+        
         <div className="relative w-full max-w-6xl mx-auto">
-          {/* Timeline */}
+        
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-blue-200 h-full w-1 md:w-2 rounded-md"></div>
 
-          {/* Step 1 */}
+          
           <div className="flex items-start mb-12 w-full relative">
             <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-105">
               <FaVideo className="text-2xl" />
@@ -32,7 +35,7 @@ const InstructionPage = () => {
             </div>
           </div>
 
-          {/* Step 2 */}
+          
           <div className="flex items-start mb-12 w-full relative">
             <div className="flex-shrink-0 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-105">
               <MdSchedule className="text-2xl" />
@@ -44,7 +47,7 @@ const InstructionPage = () => {
             </div>
           </div>
 
-          {/* Step 3 */}
+         
           <div className="flex items-start mb-12 w-full relative">
             <div className="flex-shrink-0 w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-105">
               <FaFilePdf className="text-2xl" />
@@ -56,7 +59,7 @@ const InstructionPage = () => {
             </div>
           </div>
 
-          {/* Step 4 */}
+         
           <div className="flex items-start w-full relative">
             <div className="flex-shrink-0 w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-105">
               <FaCheckCircle className="text-2xl" />
@@ -69,7 +72,8 @@ const InstructionPage = () => {
           </div>
         </div>
       </div>
-    </div>
+            </div>
+                  </main>
   );
 };
 
