@@ -11,7 +11,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/komal-a2392624a/',
     github: 'https://github.com/KomalSrivastava',
     twitter: '',
-    profile: '#alice-johnson-profile',
+    profile: '',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/shivansh-mahajan-13227824a/',
     github: 'https://github.com/shivansh-2003',
     twitter: '',
-    profile: '#bob-smith-profile',
+    profile: '',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/vansh-verma-b48290293',
     github: 'www.github.com/Vansh17555555',
     twitter: '',
-    profile: '#charlie-brown-profile',
+    profile: '',
   },
   {
     id: 1,
@@ -41,7 +41,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/komal-a2392624a/',
     github: 'https://github.com/KomalSrivastava',
     twitter: '',
-    profile: '#dana-white-profile',
+    profile: '',
   },
 ];
 
